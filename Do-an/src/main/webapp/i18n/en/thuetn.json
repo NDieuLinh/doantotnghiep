@@ -1,0 +1,27 @@
+{
+  "doAnApp": {
+    "thuetn": {
+      "home": {
+        "title": "Thuetns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Thuetn",
+        "createOrEditLabel": "Create or edit a Thuetn",
+        "notFound": "No Thuetns found"
+      },
+      "created": "A new Thuetn is created with identifier {{ param }}",
+      "updated": "A Thuetn is updated with identifier {{ param }}",
+      "deleted": "A Thuetn is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Thuetn {{ id }}?"
+      },
+      "detail": {
+        "title": "Thuetn"
+      },
+      "id": "ID",
+      "bacthue": "Bacthue",
+      "tu": "Tu",
+      "den": "Den",
+      "thuesuat": "Thuesuat"
+    }
+  }
+}

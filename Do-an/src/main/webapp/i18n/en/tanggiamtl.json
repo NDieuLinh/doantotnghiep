@@ -1,0 +1,29 @@
+{
+  "doAnApp": {
+    "tanggiamtl": {
+      "home": {
+        "title": "Tanggiamtls",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Tanggiamtl",
+        "createOrEditLabel": "Create or edit a Tanggiamtl",
+        "notFound": "No Tanggiamtls found"
+      },
+      "created": "A new Tanggiamtl is created with identifier {{ param }}",
+      "updated": "A Tanggiamtl is updated with identifier {{ param }}",
+      "deleted": "A Tanggiamtl is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tanggiamtl {{ id }}?"
+      },
+      "detail": {
+        "title": "Tanggiamtl"
+      },
+      "id": "ID",
+      "ngaythang": "Ngaythang",
+      "tkn": "Tkn",
+      "tkc": "Tkc",
+      "sotien": "Sotien",
+      "diengiai": "Diengiai",
+      "nhanvien": "Nhanvien"
+    }
+  }
+}

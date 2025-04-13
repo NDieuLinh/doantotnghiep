@@ -1,0 +1,27 @@
+{
+  "doAnApp": {
+    "phongban": {
+      "home": {
+        "title": "Phongbans",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Phongban",
+        "createOrEditLabel": "Create or edit a Phongban",
+        "notFound": "No Phongbans found"
+      },
+      "created": "A new Phongban is created with identifier {{ param }}",
+      "updated": "A Phongban is updated with identifier {{ param }}",
+      "deleted": "A Phongban is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Phongban {{ id }}?"
+      },
+      "detail": {
+        "title": "Phongban"
+      },
+      "id": "ID",
+      "mapb": "Mapb",
+      "tenpb": "Tenpb",
+      "sdt": "Sdt",
+      "nhanvien": "Nhanvien"
+    }
+  }
+}
