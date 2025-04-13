@@ -1,0 +1,49 @@
+package com.ketoan.doantotnghiep.controller;
+
+import com.ketoan.doantotnghiep.models.PhongBan;
+import com.ketoan.doantotnghiep.services.PhongBanService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/phongban")
+public class PhongBanController {
+
+    @Autowired
+    private PhongBanService service;
+
+    @GetMapping
+    public List<PhongBan> getAll() {
+        return service.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<PhongBan> getById(@PathVariable Integer id) {
+        return service.findById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PostMapping
+    public PhongBan create(@RequestBody PhongBan entity) {
+        return service.save(entity);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<PhongBan> update(@PathVariable Integer id, @RequestBody PhongBan entity) {
+        try {
+            return ResponseEntity.ok(service.update(id, entity));
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Integer id) {
+        service.deleteById(id);
+        return ResponseEntity.noContent().build();
+    }
+}
